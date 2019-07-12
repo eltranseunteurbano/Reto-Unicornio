@@ -1,0 +1,254 @@
+@import '../../style.scss';
+
+.Home{
+    background: $fondo;
+    display: flex;
+    min-height: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+
+        width: 150px;
+        height: 100vh;
+        padding: 40px 0;
+        box-sizing: border-box;
+        
+        box-shadow: 5px 0px 5px 0px rgba(157,168,190,0.25);
+        position: fixed;
+        z-index: 10;
+        background: $fondo;
+
+        &__logo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        &__items{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            
+            a{
+                margin: 10px 0;
+                transition: all .4s;
+                text-decoration: none;
+                padding: 10px;
+                background: white;
+                border: solid 2px white;
+                border-radius: 10px;
+                font-size: 25px;
+                color: $fuente;
+                width: 30px;
+                height: 30px;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+               
+            }
+            a:hover{
+                background: $rojo;
+                color: $fondo;
+            }
+        }
+    }
+
+    &__content{
+        margin-left: 150px;
+        width: calc( 100vw - 150px);
+        box-sizing: border-box;
+        background: $azul;
+        min-height: 100vh;
+        
+       
+
+        &__adicional{
+            padding-left: 10%;
+            margin-bottom: 10%;
+            margin-top: 100px;
+            box-sizing: border-box;
+
+            &__cards{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-content: center;
+                align-items: center;
+
+                background: $fondo;
+                box-shadow: 5px 5px 5px 0px rgba(157,168,190,0.25);
+                width: 400px;
+                padding: 20px;
+                border-radius: 15px;
+                margin: 40px 0;
+
+                &__text{
+                    font-family: $dosis;
+                    margin-left: 30px;
+                    h3{
+                        font-weight: bolder;
+                        color: $titulo;
+                        margin-bottom: 10px;
+                        font-size: 40px;
+                    }
+                    p{
+                        font-weight: normal;
+                        color: $fuente;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &__cards:last-child{
+                margin-left: 160px;
+            }
+        }
+
+        &__aboutme{
+            padding-left: 10%;
+            margin-bottom: 10%;
+            box-sizing: border-box;
+
+            &__titulo{
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 20px;                
+                h2{
+                    font-weight: bolder;
+                    color: $titulo;
+                    font-size: 60px;
+                    font-family: $dosis;
+                }
+            }
+
+            &__content{
+                background: $fondo;
+                font-family: $dosis;
+                color: $titulo;
+                box-shadow: 0px 5px 5px 0px rgba(157,168,190,0.25);
+                padding: 20px;
+                border-radius: 15px;
+                width: 30%;
+                box-sizing: border-box;
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 30px;
+                }
+                h6{
+                    font-weight: bolder;
+                    font-size: 20px;
+                }
+            }
+
+            &__rocket{
+                position: absolute;
+                z-index: 10;
+                right: 35%;
+                top: 80%;
+
+                img{
+                    width: 150%;
+                }
+            }
+        }
+
+        &__portfolio{
+            padding-left: 10%;
+            margin-bottom: 10%;
+            box-sizing: border-box;
+            width: 100%;
+            
+            &__titulo{
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 40px;                
+                h2{
+                    font-weight: bolder;
+                    color: $titulo;
+                    font-size: 60px;
+                    font-family: $dosis;
+                    text-align: center;
+                }
+            }
+
+            &__content{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                &__proyecto{
+                    background: $titulo;
+                    width: 400px;
+                    height: 280px;
+                    margin: 0 20px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 60%;
+                    }
+
+                    &__atras{
+                        background-color: $rojo;
+                        border-radius: 15px;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: all .4s;
+                        h3{
+                            color: $fondo;
+                            font-family: $dosis;
+                            font-weight: bolder;
+                            font-size: 20px;
+                        }
+                    }
+
+                    &__atras:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

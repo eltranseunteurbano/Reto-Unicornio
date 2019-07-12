@@ -1,0 +1,14 @@
+@import '../../style.scss';
+
+footer{
+    background: $rojo;
+    color: $fondo;
+    font-family: $dosis;
+    padding: 10px 0;
+    text-align: center;
+    letter-spacing: 1px;
+
+    strong{
+        font-weight: bolder;
+    }
+}
