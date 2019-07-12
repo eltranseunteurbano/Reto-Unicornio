@@ -12,7 +12,7 @@ export default function     aboutme (props){
         </div>
 
         <div className="Home__content__aboutme__rocket">
-            <img src={process.env.PUBLIC_URL + './img/rocket.png'} alt="Cohete"/>
+            <img src='%PUBLIC_URL%/img/rocket.png' alt="Cohete"/>
         </div>
     </article>
     )

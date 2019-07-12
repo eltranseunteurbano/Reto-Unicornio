@@ -15,7 +15,7 @@ export default function Header (props){
             </div>
 
             <div className="Home__content__header__card">
-                <img src={process.env.PUBLIC_URL + './img/image.png'} alt="Imagen"/>
+                <img src='%PUBLIC_URL%/img/image.png' alt="Imagen"/>
             </div>
         </article>
     )

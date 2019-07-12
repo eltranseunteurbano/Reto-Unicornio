@@ -7,7 +7,7 @@ export default function Menu (props){
     return(
         <article className="Home__menu">
             <div className="Home__menu__logo">
-                    <img src={process.env.PUBLIC_URL + "./img/unicorn.png"} alt="Logo"/>
+                    <img src="%PUBLIC_URL%/img/unicorn.png" alt="Logo"/>
             </div>
             <div className="Home__menu__items">
                 <a href="https://www.instagram.com/eltranseunteurbano" target="_blank"><FontAwesomeIcon icon={faInstagram} /> </a>
