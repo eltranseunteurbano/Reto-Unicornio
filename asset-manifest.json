@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Reto-Unicornio/static/css/main.2467a69e.chunk.css",
-    "main.js": "/Reto-Unicornio/static/js/main.39757d66.chunk.js",
-    "main.js.map": "/Reto-Unicornio/static/js/main.39757d66.chunk.js.map",
+    "main.js": "/Reto-Unicornio/static/js/main.d832d0a3.chunk.js",
+    "main.js.map": "/Reto-Unicornio/static/js/main.d832d0a3.chunk.js.map",
     "runtime~main.js": "/Reto-Unicornio/static/js/runtime~main.1aa296b2.js",
     "runtime~main.js.map": "/Reto-Unicornio/static/js/runtime~main.1aa296b2.js.map",
     "static/js/2.731e7900.chunk.js": "/Reto-Unicornio/static/js/2.731e7900.chunk.js",
     "static/js/2.731e7900.chunk.js.map": "/Reto-Unicornio/static/js/2.731e7900.chunk.js.map",
     "index.html": "/Reto-Unicornio/index.html",
-    "precache-manifest.f696e0a8802cee9ebfcbbe0a94f8c6ce.js": "/Reto-Unicornio/precache-manifest.f696e0a8802cee9ebfcbbe0a94f8c6ce.js",
+    "precache-manifest.78d6dc746daef7576f94bed4aa3b466b.js": "/Reto-Unicornio/precache-manifest.78d6dc746daef7576f94bed4aa3b466b.js",
     "service-worker.js": "/Reto-Unicornio/service-worker.js",
     "static/css/main.2467a69e.chunk.css.map": "/Reto-Unicornio/static/css/main.2467a69e.chunk.css.map"
   }

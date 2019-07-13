@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a38939ea1a079e99b13c02d3bfd2741",
+    "revision": "e54679af8067782d70eda8e40cb52fa1",
     "url": "/Reto-Unicornio/index.html"
   },
   {
-    "revision": "addccce1126b75995f60",
+    "revision": "d16398354110977c9d74",
     "url": "/Reto-Unicornio/static/css/main.2467a69e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Reto-Unicornio/static/js/2.731e7900.chunk.js"
   },
   {
-    "revision": "addccce1126b75995f60",
-    "url": "/Reto-Unicornio/static/js/main.39757d66.chunk.js"
+    "revision": "d16398354110977c9d74",
+    "url": "/Reto-Unicornio/static/js/main.d832d0a3.chunk.js"
   },
   {
     "revision": "bc908ccdd0abbece1efe",
