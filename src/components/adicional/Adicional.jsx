@@ -5,7 +5,7 @@ export default function Adicional (props){
         <article className="Home__content__adicional">
                     <div className="Home__content__adicional__cards">
                         <div className="Home__content__adicional__cards__icon">
-                            <img src="%PUBLIC_URL%/img/development.png" alt=""/>
+                            <img src={ process.env.PUBLIC_URL + "./img/development.png"} alt=""/>
                         </div>
                         <div className="Home__content__adicional__cards__text">
                             <h3>Desarrollo Web</h3>
@@ -14,7 +14,7 @@ export default function Adicional (props){
                     </div>
                     <div className="Home__content__adicional__cards">
                         <div className="Home__content__adicional__cards__icon">
-                            <img src="%PUBLIC_URL%/img/design.png" alt=""/>
+                            <img src={process.env.PUBLIC_URL + "./img/design.png"} alt=""/>
                         </div>
                         <div className="Home__content__adicional__cards__text">
                             <h3>Diseño Web</h3>

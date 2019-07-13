@@ -1,6 +1,10 @@
 import React from 'react';
 
-export default function     aboutme (props){
+export default class Aboutne extends React.Component{
+
+    render(){
+
+    
     return(
         <article className="Home__content__aboutme" id="aboutme">
         <div className="Home__content__aboutme__titulo">
@@ -12,8 +16,11 @@ export default function     aboutme (props){
         </div>
 
         <div className="Home__content__aboutme__rocket">
-            <img src='%PUBLIC_URL%/img/rocket.png' alt="Cohete"/>
+            
+            <img src={process.env.PUBLIC_URL + './img/rocket.png'} alt="Cohete"/>
+            
         </div>
     </article>
     )
+        }
 }

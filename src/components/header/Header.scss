@@ -6,29 +6,129 @@
         &__header {
             background: $fondo;
             box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
-
             &__nav {
+                h1 {
+                    display: none;
+                }
+
+                &__items {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    align-content: center;
+                    align-items: center;
+                    padding-top: 40px;
+                    padding-right: 100px;
+
+                    a {
+                        font-family: $dosis;
+                        color: $titulo;
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-decoration: none;
+                        margin: 0 40px;
+                        transition: all .4s;
+                        position: relative;
+                        z-index: 3;
+                    }
+
+                    a:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        bottom: -5px;
+                        left: 0;
+                        background: $rojo;
+                        visibility: hidden;
+                        border-radius: 5px;
+                        transform: scaleX(0);
+                        transition: .25s all ease-in-out;
+                    }
+
+                    a:hover {
+                        color: $rojo;
+                    }
+
+                    a:hover:before,
+                    a:focus:before {
+                        transform: scaleX(1);
+                        visibility: visible;
+                    }
+                }
+            }
+
+            &__navHidden {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: flex-end;
+                justify-content: space-between;
                 align-content: center;
                 align-items: center;
-                padding-top: 40px;
-                padding-right: 100px;
 
-                a {
+                position: fixed;
+                top: 0;
+                background: $fondo;
+                box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
+                width: calc(100% - 115px);
+                box-sizing: border-box;
+                z-index: 100;
+                transition: all .4s;
+
+                h1 {
+                    font-weight: bolder;
+                    color: $rojo;
+                    font-size: 40px;
                     font-family: $dosis;
-                    color: $titulo;
-                    font-weight: 700;
-                    font-size: 18px;
-                    text-decoration: none;
-                    margin: 0 40px;
-                    transition: all .4s;
+                    padding-left: 10%;
                 }
 
-                a:hover {
-                    color: $rojo;
+                &__items {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+                    align-content: center;
+                    align-items: center;
+                    padding: 40px 0;
+                    padding-right: 100px;
+
+                    a {
+                        font-family: $dosis;
+                        color: $titulo;
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-decoration: none;
+                        margin: 0 40px;
+                        transition: all .4s;
+                        position: relative;
+                        z-index: 3;
+                    }
+
+                    a:before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        bottom: -5px;
+                        left: 0;
+                        background: $rojo;
+                        visibility: hidden;
+                        border-radius: 5px;
+                        transform: scaleX(0);
+                        transition: .25s all ease-in-out;
+                    }
+
+                    a:hover {
+                        color: $rojo;
+                    }
+
+                    a:hover:before,
+                    a:focus:before {
+                        transform: scaleX(1);
+                        visibility: visible;
+                    }
                 }
             }
 
@@ -64,9 +164,517 @@
 
                 position: absolute;
                 z-index: 10;
-                right: 25%;
+                right: 10%;
                 top: 12%;
             }
         }
     }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1500px){
+    .Home {
+        &__content {
+    
+            &__header {
+                background: $fondo;
+                box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
+                &__nav {
+                    h1 {
+                        display: none;
+                    }
+    
+                    &__items {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        align-content: center;
+                        align-items: center;
+                        padding-top: 40px;
+                        padding-right: 100px;
+    
+                        a {
+                            font-family: $dosis;
+                            color: $titulo;
+                            font-weight: 700;
+                            font-size: 18px;
+                            text-decoration: none;
+                            margin: 0 40px;
+                            transition: all .4s;
+                            position: relative;
+                            z-index: 3;
+                        }
+    
+                        a:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -5px;
+                            left: 0;
+                            background: $rojo;
+                            visibility: hidden;
+                            border-radius: 5px;
+                            transform: scaleX(0);
+                            transition: .25s all ease-in-out;
+                        }
+    
+                        a:hover {
+                            color: $rojo;
+                        }
+    
+                        a:hover:before,
+                        a:focus:before {
+                            transform: scaleX(1);
+                            visibility: visible;
+                        }
+                    }
+                }
+    
+                &__navHidden {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+    
+                    position: fixed;
+                    top: 0;
+                    background: $fondo;
+                    box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
+                    width: calc(100% - 115px);
+                    box-sizing: border-box;
+                    z-index: 100;
+                    transition: all .4s;
+    
+                    h1 {
+                        font-weight: bolder;
+                        color: $rojo;
+                        font-size: 40px;
+                        font-family: $dosis;
+                        padding-left: 10%;
+                    }
+    
+                    &__items {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        align-content: center;
+                        align-items: center;
+                        padding: 40px 0;
+                        padding-right: 100px;
+    
+                        a {
+                            font-family: $dosis;
+                            color: $titulo;
+                            font-weight: 700;
+                            font-size: 18px;
+                            text-decoration: none;
+                            margin: 0 40px;
+                            transition: all .4s;
+                            position: relative;
+                            z-index: 3;
+                        }
+    
+                        a:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -5px;
+                            left: 0;
+                            background: $rojo;
+                            visibility: hidden;
+                            border-radius: 5px;
+                            transform: scaleX(0);
+                            transition: .25s all ease-in-out;
+                        }
+    
+                        a:hover {
+                            color: $rojo;
+                        }
+    
+                        a:hover:before,
+                        a:focus:before {
+                            transform: scaleX(1);
+                            visibility: visible;
+                        }
+                    }
+                }
+    
+                &__titulo {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-bottom: 80px;
+    
+                    h1 {
+                        font-weight: bolder;
+                        color: $titulo;
+                        font-size: 80px;
+                        font-family: $dosis;
+                        padding-left: 10%;
+                        padding-top: 30px;
+                    }
+                }
+    
+                &__card {
+                    background: $rojo;
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 15px;
+                    box-shadow: 5px 5px 5px 0px rgba(117, 125, 139, 0.25);
+    
+    
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+    
+                    position: absolute;
+                    z-index: 10;
+                    right: 8%;
+                    top: 12%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .Home {
+        &__content {
+    
+            &__header {
+                background: $fondo;
+                box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
+                &__nav {
+                    h1 {
+                        display: none;
+                    }
+    
+                    &__items {
+                        justify-content: center;
+                        padding-right: 0;
+                    }
+                }
+    
+                &__navHidden {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: calc( 100% - 80px );
+                    padding: 0;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    box-sizing: border-box;
+    
+                    h1 {
+                        padding-left: 0;
+                        text-align: center;
+                        padding-top: 10px;
+                    }
+    
+                    &__items {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        padding: 0;
+                        padding-right: 0;
+                        margin-top: 30px;
+    
+                        a:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -5px;
+                            left: 0;
+                            background: $rojo;
+                            visibility: hidden;
+                            border-radius: 5px;
+                            transform: scaleX(0);
+                            transition: .25s all ease-in-out;
+                        }
+    
+                        a:hover {
+                            color: $rojo;
+                        }
+    
+                        a:hover:before,
+                        a:focus:before {
+                            transform: scaleX(1);
+                            visibility: visible;
+                        }
+                    }
+                }
+    
+                &__titulo {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-bottom: 50px;
+    
+                    h1 {
+                        font-weight: bolder;
+                        color: $titulo;
+                        font-size: 50px;
+                        font-family: $dosis;
+                        padding-left: 10%;
+                        padding-top: 30px;
+                    }
+                }
+    
+                &__card {
+                    background: $rojo;
+                    width: 250px;
+                    height: 250px;
+                    
+                    position: absolute;
+                    z-index: 10;
+                    right: 120px;
+                    top: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .Home {
+        &__content {
+    
+            &__header {
+                background: $fondo;
+                box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
+                &__nav {
+                    h1 {
+                        display: none;
+                    }
+    
+                    &__items {
+                        justify-content: center;
+                        padding-right: 0;
+                    }
+                }
+    
+                &__navHidden {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: calc( 100% - 80px );
+                    padding: 0;
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                    box-sizing: border-box;
+    
+                    h1 {
+                        padding-left: 0;
+                        text-align: center;
+                        padding-top: 10px;
+                    }
+    
+                    &__items {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        padding: 0;
+                        padding-right: 0;
+                        margin-top: 30px;
+    
+                        a:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -5px;
+                            left: 0;
+                            background: $rojo;
+                            visibility: hidden;
+                            border-radius: 5px;
+                            transform: scaleX(0);
+                            transition: .25s all ease-in-out;
+                        }
+    
+                        a:hover {
+                            color: $rojo;
+                        }
+    
+                        a:hover:before,
+                        a:focus:before {
+                            transform: scaleX(1);
+                            visibility: visible;
+                        }
+                    }
+                }
+    
+                &__titulo {
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding-bottom: 50px;
+    
+                    h1 {
+                        font-weight: bolder;
+                        color: $titulo;
+                        font-size: 50px;
+                        font-family: $dosis;
+                        padding-left: 10%;
+                        padding-top: 30px;
+                    }
+                }
+    
+                &__card {
+                    background: $rojo;
+                    width: 250px;
+                    height: 250px;
+                    
+                    position: absolute;
+                    z-index: 10;
+                    right: 40px;
+                    top: 10%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .Home {
+        &__content {
+    
+            &__header {
+                background: $fondo;
+                box-shadow: 0px 5px 5px 0px rgba(157, 168, 190, 0.25);
+                padding-bottom: 20px;
+
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: center;
+
+                &__nav {
+                    h1 {
+                        display: none;
+                    }
+    
+                    &__items {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        padding-top: 40px;
+                        padding-right: 0;
+                    }
+                }
+    
+                &__navHidden {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 100vw;
+                    padding: 0;
+                    padding-bottom: 30px;
+    
+                    h1 {
+                        padding-left: 0;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+    
+                    &__items {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        padding: 0;
+                        padding-right: 0;
+                        margin-top: 30px;
+    
+                        a:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            bottom: -5px;
+                            left: 0;
+                            background: $rojo;
+                            visibility: hidden;
+                            border-radius: 5px;
+                            transform: scaleX(0);
+                            transition: .25s all ease-in-out;
+                        }
+    
+                        a:hover {
+                            color: $rojo;
+                        }
+    
+                        a:hover:before,
+                        a:focus:before {
+                            transform: scaleX(1);
+                            visibility: visible;
+                        }
+                    }
+                }
+    
+                &__titulo {
+                    padding-bottom: 0px;
+                    h1 {
+                        font-size: 50px;
+                        padding-left: 0;
+                        color: $rojo;
+                        text-align: center;
+                    }
+                }
+    
+                &__card {
+                    background: $rojo;
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 15px;
+                    box-shadow: 5px 5px 5px 0px rgba(117, 125, 139, 0.25);
+    
+    
+                    display: none;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+    
+                    position: absolute;
+                    z-index: 10;
+                    right: 25%;
+                    top: 12%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:620px){
+    
 }
