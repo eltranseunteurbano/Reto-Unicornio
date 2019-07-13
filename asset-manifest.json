@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Reto-Unicornio/static/css/main.2467a69e.chunk.css",
-    "main.js": "/Reto-Unicornio/static/js/main.d832d0a3.chunk.js",
-    "main.js.map": "/Reto-Unicornio/static/js/main.d832d0a3.chunk.js.map",
+    "main.css": "/Reto-Unicornio/static/css/main.83ae052f.chunk.css",
+    "main.js": "/Reto-Unicornio/static/js/main.194930ad.chunk.js",
+    "main.js.map": "/Reto-Unicornio/static/js/main.194930ad.chunk.js.map",
     "runtime~main.js": "/Reto-Unicornio/static/js/runtime~main.1aa296b2.js",
     "runtime~main.js.map": "/Reto-Unicornio/static/js/runtime~main.1aa296b2.js.map",
-    "static/js/2.731e7900.chunk.js": "/Reto-Unicornio/static/js/2.731e7900.chunk.js",
-    "static/js/2.731e7900.chunk.js.map": "/Reto-Unicornio/static/js/2.731e7900.chunk.js.map",
+    "static/js/2.aa053a1f.chunk.js": "/Reto-Unicornio/static/js/2.aa053a1f.chunk.js",
+    "static/js/2.aa053a1f.chunk.js.map": "/Reto-Unicornio/static/js/2.aa053a1f.chunk.js.map",
     "index.html": "/Reto-Unicornio/index.html",
-    "precache-manifest.78d6dc746daef7576f94bed4aa3b466b.js": "/Reto-Unicornio/precache-manifest.78d6dc746daef7576f94bed4aa3b466b.js",
+    "precache-manifest.3eacde26dca55530d80cb6fe6fd9df6b.js": "/Reto-Unicornio/precache-manifest.3eacde26dca55530d80cb6fe6fd9df6b.js",
     "service-worker.js": "/Reto-Unicornio/service-worker.js",
-    "static/css/main.2467a69e.chunk.css.map": "/Reto-Unicornio/static/css/main.2467a69e.chunk.css.map"
+    "static/css/main.83ae052f.chunk.css.map": "/Reto-Unicornio/static/css/main.83ae052f.chunk.css.map"
   }
 }
