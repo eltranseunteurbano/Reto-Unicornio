@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Reto-Unicornio/precache-manifest.3eacde26dca55530d80cb6fe6fd9df6b.js"
+  "/Reto-Unicornio/precache-manifest.c32e16e95142fed91359651f4429c694.js"
 );
 
 self.addEventListener('message', (event) => {
